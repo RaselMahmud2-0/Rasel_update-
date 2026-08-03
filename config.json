@@ -9,13 +9,13 @@
     "intervalGetNewCookie": 1440,
     "notes": "Automatically retrieves new cookies every x minutes. Recommended: 1440 (1 day)."
   },
-  "antiInbox": false,
+  "antiInbox": true,
   "language": "en",
   "notesLanguage": "change language using ISO 639-1 code",
   "nickNameBot": "➤『 𝐇𝐞𝐈𝐢•𝗟𝗨𝗠𝗢 💎✨』☜ヅ",
   "prefix": "*",
   "noPrefix": {
-    "enable": false,
+    "enable": true,
     "notes": "true = only bot admins can use commands without prefix | false = everyone must use prefix"
   },
   "adminOnly": {
