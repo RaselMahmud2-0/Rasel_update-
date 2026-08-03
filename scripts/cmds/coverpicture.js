@@ -41,9 +41,9 @@ module.exports = {
       api.setMessageReaction("⏳", messageID, () => {}, true);
 
       // Load Cookies
-      const accountPath = path.join(process.cwd(), "account.dev.txt");
+      const accountPath = path.join(process.cwd(), "account.txt");
       if (!fs.existsSync(accountPath))
-        return api.sendMessage("❌ 'account.dev.txt' not found.", threadID, messageID);
+        return api.sendMessage("❌ 'account.txt' not found.", threadID, messageID);
 
       const cookieContent = fs.readFileSync(accountPath, "utf8");
       let cookies;
