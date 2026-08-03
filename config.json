@@ -12,8 +12,8 @@
   "antiInbox": false,
   "language": "en",
   "notesLanguage": "change language using ISO 639-1 code",
-  "nickNameBot": "—͞ 𝐐𝐔𝐄𝐄𝐍 🎀❤️‍🩹",
-  "prefix": "/",
+  "nickNameBot": "➤『 𝐇𝐞𝐈𝐢•𝗟𝗨𝗠𝗢 💎✨』☜ヅ",
+  "prefix": "*",
   "noPrefix": {
     "enable": false,
     "notes": "true = only bot admins can use commands without prefix | false = everyone must use prefix"
@@ -23,7 +23,7 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "61583835186508",
+    "61591685889830",
     " ",
     " "
   ],
@@ -31,8 +31,8 @@
     "enable": true,
     "onlyAdmin": true,
     "emojis": [
-      "😡",
-      "🤬"
+      "🤬",
+      "®️"
     ],
     "notes": "If enable = true, bot will unsend any message reacted with these emojis. If onlyAdmin = true, only adminBot IDs can trigger it."
   },
@@ -40,7 +40,7 @@
     "enable": false,
     "whiteListIds": [
       "100083039411474",
-      "100063840894133"
+      "61591685889830"
     ],
     "notes": "If enabled, only IDs in whiteListIds can use the bot."
   },
