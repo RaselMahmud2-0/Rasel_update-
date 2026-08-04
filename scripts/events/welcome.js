@@ -6,7 +6,7 @@ const { createCanvas, loadImage } = require("canvas");
 module.exports = {
   config: {
     name: "welcome",
-    version: "7.0",
+    version: "7.1",
     author: "Rasel Mahmud",
     category: "events",
     eventType: ["log:subscribe"]
@@ -50,7 +50,7 @@ module.exports = {
         const sessionMessages = {
           morning: "🌅 Have a wonderful morning!",
           afternoon: "☀️ Enjoy your afternoon!",
-          evening: "🌇 Have a pleasant evening!",
+          evening: "Rest and refresh! 🌇 Have a pleasant evening!",
           night: "🌙 Good night & sweet dreams!"
         };
 
@@ -222,8 +222,8 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
 
   // ===== LEFT SIDE - NEW USER =====
   const leftX = cardX + 180;
-  const profileY = cardY + 150;
-  const profileSize = 120;
+  const profileY = cardY + 205; // 📌 প্রোফাইল কিছুটা নিচে নামানো হয়েছে
+  const profileSize = 110;
 
   // New User Profile Frame
   ctx.shadowColor = "#2ecc71";
@@ -281,7 +281,7 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
   if (userName.length > 16) {
     displayName = userName.substring(0, 14) + "...";
   }
-  ctx.fillText(displayName, leftX, profileY + profileSize + 70);
+  ctx.fillText(displayName, leftX, profileY + profileSize + 68);
 
   // ===== RIGHT SIDE - ADDED BY =====
   const rightX = cardX + cardWidth - 180;
@@ -340,7 +340,7 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
   if (inviterName.length > 16) {
     displayInviter = inviterName.substring(0, 14) + "...";
   }
-  ctx.fillText(displayInviter, rightX, profileY + profileSize + 70);
+  ctx.fillText(displayInviter, rightX, profileY + profileSize + 68);
 
   // ===== CONNECTOR LINE WITH ARROW =====
   ctx.shadowColor = "#ffffff";
@@ -366,8 +366,8 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
 
   // ===== CENTER SECTION - GROUP INFO =====
   const centerX = width / 2;
-  const groupY = profileY + profileSize + 110;
-  const groupImageSize = 70;
+  const groupY = cardY + 195; // 📌 গ্রুপের লোগো উপরে তোলা হয়েছে
+  const groupImageSize = 65;
 
   // Group Image Frame
   ctx.shadowColor = "#00c8ff";
@@ -413,15 +413,15 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
 
   // Group Name
   ctx.fillStyle = "#ffffff";
-  ctx.font = "bold 30px 'Segoe UI', Arial";
+  ctx.font = "bold 28px 'Segoe UI', Arial";
   let displayGroup = threadName;
   if (threadName.length > 30) {
     displayGroup = threadName.substring(0, 28) + "...";
   }
-  ctx.fillText(`📌 ${displayGroup}`, centerX, groupY + groupImageSize + 40);
+  ctx.fillText(`📌 ${displayGroup}`, centerX, groupY + groupImageSize + 35);
 
   // ===== MEMBER COUNT SECTION =====
-  const memberY = groupY + 85;
+  const memberY = cardY + 395; // 📌 মেম্বার কাউন্ট বক্স পজিশন সঠিক করা হয়েছে
   
   ctx.fillStyle = "rgba(155, 89, 182, 0.2)";
   ctx.beginPath();
@@ -446,7 +446,7 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
   ctx.fillText(memberText, centerX, memberY + 35);
 
   // ===== SESSION MESSAGE =====
-  const sessionY = memberY + 70;
+  const sessionY = memberY + 68;
   
   ctx.fillStyle = "rgba(0, 170, 255, 0.15)";
   ctx.beginPath();
@@ -521,7 +521,7 @@ async function createWelcomeCard({ userName, threadName, memberCount, inviterNam
   return tempPath;
 }
 
-// ===== ROUNDRECT FUNCTION (Fixed) =====
+// ===== ROUNDRECT FUNCTION =====
 function roundRect(ctx, x, y, w, h, r) {
   if (w < 2 * r) r = w / 2;
   if (h < 2 * r) r = h / 2;
