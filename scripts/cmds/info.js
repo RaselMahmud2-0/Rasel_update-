@@ -23,21 +23,22 @@ module.exports = {
     try {
       // Create beautiful information box
       const message = 
-        `╔═════❰ 𝐇𝐞𝐈𝐢•𝗟𝗨𝗠𝗢 ❱═════╗\n` +
-        `         👑 𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑 𝐈𝐍𝐅𝐎\n\n` +
-        `🪪 𝐍𝐚𝐦𝐞: Rasel Mahmud\n` +
-        `📏 𝐇𝐞𝐢𝐠𝐡𝐭: 5 feet 8 inches\n` +
-        `🌍 𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧: Mymensingh\n` +
-        `🎓 𝐒𝐭𝐮𝐝𝐲: Rajshahi\n\n` +
-        `🔗 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤:\n` +
-        `https://www.facebook.com/profile.php?id=61591685889830\n\n` +
-        `📺 𝐘𝐨𝐮𝐓𝐮𝐛𝐞:\n` +
-        `https://youtube.com/@rmsilentgaming\n\n` +
-        `💎 𝐁𝐨𝐭 𝐍𝐚𝐦𝐞: 𝐇𝐞𝐈𝐢•𝗟𝗨𝗠𝐎\n` +
-        `🌟 𝐒𝐭𝐚𝐭𝐮𝐬: Active & Running\n` +
-        `🛡️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 2.0 Premium\n\n` +
-        `Thanks for using our bot!\n` +
-        `╚═══════════════════╝`;
+        `═════❰ 𝐇𝐞𝐈𝐢•𝗟𝗨𝗠𝗢 ❱════
+◤───── ☆. 👑 .☆ ─────◥
+[    𝐌𝐘 𝐈𝐃𝐄𝐍𝐓𝐈𝐓𝐘   ]
+​◢  𝐍𝐚𝐦𝐞 : 𝐑𝐚𝐬𝐞𝐥 𝐌𝐚𝐡𝐦𝐮𝐝 😇
+◢  𝐁𝐚𝐬𝐚 :  𝐌𝐲𝐦𝐞𝐧𝐬𝐢𝐧𝐠𝐡 🛖
+◢  𝐀𝐠𝐞   : 𝐇𝐢𝐝𝐞 🫣
+◢  𝐇𝐞𝐢𝐠𝐡𝐭 : 𝟓'𝟖" 📏
+◢ 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧: 𝐈𝐬𝐥𝐚𝐦 🕋🕌
+◢  𝐑𝐥𝐬   : 𝐒𝐢𝐧𝐠𝐥𝐞 𝐩𝐫𝐨 𝐦𝐚𝐱🥱🥹
+◢ 𝐁𝐨𝐫𝐭𝐨𝐦𝐚𝐧: 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬💼📊
+◢  𝐇𝐨𝐛𝐛𝐲 : 𝐭𝐤💸🕰️
+◢  𝐋𝐨𝐯𝐞 : 𝟏𝟎% 😩
+◢  𝐑𝐮𝐝𝐞𝐧𝐬𝐬 : 𝐉𝐚𝐫 𝐬𝐚𝐭𝐡𝐞 𝐣𝐞𝐭𝐚 𝐣𝐚𝐲🙂‍↔️🫂
+◢  𝐁𝐥𝐨𝐨𝐝 : 𝐁.. 𝐏𝐨𝐬𝐢𝐭𝐢𝐯𝐞 💉
+𝐑 𝐤𝐢𝐜𝐡𝐮 𝐣𝐚𝐧𝐭𝐞 𝐜𝐚𝐢𝐥𝐞 𝐛𝐨𝐥𝐛𝐞𝐧🤺
+​◤──── ☆. 👑 .☆ ──────◥`;
       
       // Get profile picture
       const imgURL = "https://graph.facebook.com/61591685889830/picture?width=720&height=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662";
